@@ -17,6 +17,7 @@
 <body>
 	<header>
 	<!-- Phần của Nhật -->
+	<!-- Header top -->
 	<div class="header-top">
 		<div class="col-sm-4 logo">
 			<a href="http://ybox.vn">
@@ -32,6 +33,165 @@
 				</div>
 		</div>
 	</div>
+	<!-- Header-menu -->
+	<div class="header-menu" data-login>
+		<nav class="navbar navbar-default custom-navbar bg-white border-radius-none hidden-sm hidden-xs" role="navigation" style="min-height: 32px;">
+			<div class="stickyheader pdlr-15" style="position: static;top :0px;">
+				<div>
+					<ul class="nav navbar-nav hidden-xs">
+						<li class="logo-inline" style="display:none;">
+							<img src="img/ybox.png">
+						</li>
+						<li>
+							<a href="http://ybox.vn" class="active">
+								<i class="fa fa-home fa-lg active" aria-hidden="true"></i>
+								&nbsp;Trang Chủ
+							</a>
+						</li>
+						<li class="text-muted">|</li>
+						<li>
+							<a href="https://www.fb.co/ybox.vn" target="_blank" class="show">
+								<i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i>
+								&nbsp;Theo Dõi
+							</a>
+						</li>
+						<li class="text-muted">|</li>
+						<li class>
+							<form class="left-inner-addon" action="http://ybox.vn#top">
+								<i class="fa fa-search"></i>
+								<input data-search-title type="text" style="border:none;box-shadow: none;font-size: 16px" name="keyword" class="form-control" placeholder="Tìm Kiếm" value>
+							</form>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav pull-right hidden-xs link">
+						<li>
+							<a id="login-btn" type="button" data-toggle="modal" data-target="#loginYbox">
+								<i class="fa fa-user small" aria-hidden="true" style="color: #F0AD4E;"></i>
+								&nbsp;Đăng Nhập
+							</a>
+						</li>
+						<li class="text-muted">|</li>
+						<li class="bell-notification">
+							<button class="btn dropdown-toggle pd-lr-10" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: #FFFFFF"> 
+								<i class="fa fa-bell small" aria-hidden="true"></i>
+								<sup id="is-bell-noti">
+									<span class="badge bg-red" style="margin-left:-8px;background-color: #ff0000">1</span>
+								</sup>
+							</button>
+						</li>
+						<li class="text-muted">|</li>
+						<li>
+							<div class="pdl-10">
+								<button type="button" class="btn btn-warning btn-sm btn-block btn-search" data-toggle="modal" data-target="#loginYbox">
+									<i class="fa fa-pencil" aria-hidden="true"></i>
+									&nbsp;Viết Bài
+								</button>
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+			
+		</nav>
+		<nav class="navbar navbar-default custom-navbar bg-white border-radius-none visible-sm visible-xs" role="navigation" style="min-height: 32px;">
+			<div class>
+				<div class="btn-group" data-spy="affix" data-offset-top="150" role="group" aria-label="..." style="width:100%;">
+					<li>
+						<button type="button" class="col-xs-3 btn nav-mobile mr-0 bg-black dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border-right:0">
+							<i class="fa fa-bars icon-shadow"></i>
+							&nbsp;
+						</button>
+						<div class="dropdown-menu dropdown-menu-type animated fadeInLeft">
+							<ul class="sideYbox navbar" id="sidebar-category-main" style="padding-left: 20px;font-size: 16px;" >
+								<li>
+									<span class="bold text-yellow">CHỦ ĐỀ</span>
+									<hr class="mr-0">
+								</li>
+								<li class="bold">
+									<a href="http://ybox.vn/tuyen-dung">#Tuyển dụng</a>
+									<hr class="mr-0">
+								</li>
+								<li class="bold">
+									<a href="http://ybox.vn/hoc-bong">#Học Bổng</a>
+									<hr class="mr-0">
+								</li>
+								<li class="bold">
+									<a href="http://ybox.vn/su-kien">#Sự kiện</a>
+									<hr class="mr-0">
+								</li>
+								<li class="bold">
+									<a href="http://ybox.vn/cuoc-thi">#Cuộc thi</a>
+									<hr class="mr-0">
+								</li>
+								<li class="bold">
+									<a href="http://ybox.vn/ky-nang">#Kỹ năng</a>
+									<hr class="mr-0">
+								</li>
+								<li class="bold">
+									<a href="http://ybox.vn/guong-mat">#Gương mặt</a>
+									<hr class="mr-0">
+								</li>
+								<li class="bold">
+									<a href="http://ybox.vn/gia-vi">#Gia Vị</a>
+									<hr class="mr-0">
+								</li>
+								<li class="bold">
+									<a href="http://ybox.vn/hop-tac/hop-tac-cung-ybox-227087"></a>
+									<hr class="mr-0">
+								</li>
+								<li style="text-algin:center">
+									<button class="btn btn-default bold">
+										<i class="btn-fb fa fa-facebook-square" aria-hidden="true">&nbsp;</i>
+										<a href="https://www.fb.co/ybox.vn/">YBOX Fanpage</a>
+									</button>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<button type="button" class="col-xs-3 btn nav-mobile mr-0 bg-black" style="text-algin:center;" data-toggle="modal" data-target="#loginYbox">
+						&nbsp;
+						<i class="fa fa-user icon-shadow" aria-hidden="true"></i>
+						 </button>
+					</li>
+					<li>
+						<button type="button" class="col-xs-3 btn nav-mobile mr-0 bg-black dropdown-toggle bell-notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding-bottom:5px;text-align:center;" data-original-title title>
+							&nbsp;&nbsp;&nbsp;
+							<i class="fa fa-bell small icon-shadow" aria-hidden="true">
+								<sup id="is-bell-noti">
+									<span class="badge bg-red" style="margin-left:-8px;background-color: #ff0000">
+										1
+									</span>
+								</sup>
+							</i>
+						</button>
+					</li>
+					<li>
+						<button type="button" class="col-xs-3 btn nav-mobile mr-0 bg-black dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border-right:0;">
+							<i class="fa fa-search icon-shadow">
+								&nbsp;
+							</i>
+						</button>
+						<div class="dropdown-menu dropdown-menu-search animated fadeInLeft">
+							<form class="left-inner-addon" action="http://ybox.vn#top">
+								<div class="form-group pd-lr-10">
+									<label for="search" style="margin-bottom:-10px;">Từ khóa</label>
+									<input data-search-title type="text" class="form-control" name="keyword" id="inputSearch" placeholder="Tìm Kiếm">
+								</div>
+								<div class="clearfix"></div>
+								<div class="col-xs-6 col-xs-offset-3">
+									<button type="submit" class="btn btn-warning btn-sm btn-block">Tìm kiếm</button>
+								</div>
+							</form>
+						</div>
+					</li>
+				</div>
+			</div>
+		</nav>
+		
+	</div>
+	<div class="clearfix"></div>
 	</header>
 	<!-- Body chính -->
 	<div class="col-md-9 col-sm-9 center-content">
