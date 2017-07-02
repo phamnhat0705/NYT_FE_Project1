@@ -12,10 +12,15 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/sphinx-jquery-view-slider.css">
+	<link rel="stylesheet" href="css/tung.css">
+	<link rel="stylesheet" href="css/bodyright.css">
+	<link rel="stylesheet" href="css/topvote.css">
+	<link rel="stylesheet" href="css/tab.css">
 </head>
 
 <body>
 	<header>
+
 	<!-- Phần của Nhật -->
 	<!-- Header top -->
 	<div class="header-top">
@@ -192,36 +197,167 @@
 		
 	</div>
 	<div class="clearfix"></div>
+
 	</header>
 	<!-- Body chính -->
 	<div class="col-md-9 col-sm-9 center-content">
-		<div class="row">
-			<div class="col-md-4 aside hidden-xs">
-				<!-- Phần body trái -->
-				<!-- Phần của Tùng -->
+		<div class="row col-md-4">
+			<div class="aside hidden-xs">
+				<div class="hidden-sm">
+					<div>
+						<div class="panel panel-default hidden-xs div-shadow " style="padding-bottom: 0px">
+							<div class="panel-heading">
+								<strong>
+									<span class="category-header">Chủ Đề </span>
+								</strong>
+							</div>
+							<div class="panel-body"> 	
+								<ul class="sideYbox ybox16" id="sidebar-category-main">
+									<li>
+										<a href="http://ybox.vn/tuyen-dung"> #Tuyển Dụng</a>
+									</li>
+									<li>	
+										<a href="http://ybox.vn/hoc-bong"> #Học Bổng</a>
+									</li>	
+									<li>
+										<a href="http://ybox.vn/su-kien"> #Sự Kiện</a>
+									</li>
+									<li>
+										<a href="http://ybox.vn/cuoc-thi"> #Cuộc Thi</a>
+									</li>
+									<li>
+										<a href="http://ybox.vn/ky-nang"> #Kỹ Năng</a>
+									</li>
+									<li>
+										<a href="http://ybox.vn/guong-mat"> #Gương Mặt</a>
+									</li>
+									<li>
+										<a href="http://ybox.vn/gia-vi"> #Gia Vị</a>
+									</li>
+									<li class="seperate-top">
+										<a href="http://ybox.vn/hop-tac/hop-tac-cung-ybox-227087">
+											"#Liên hệ"
+											<i class="fa fa-envelope-o">	
+											</i>
+										</a>
+									</li>
+								</ul>	
+							</div>
+						</div>		
+						<div id="L1" clas="YBBN PIN">	
+							<a target="_blank" href="https://bit.ly/2GSE-L1-26062017" style="display: block;">
+								<img src="https://yboxvietnam.files.wordpress.com/2017/06/1-7.gif" width="100%">
+							</a>
+							<a target="_blank" href="https://bit.ly/Vietint-L1">
+								<img src="https://yboxvietnam.files.wordpress.com/2017/06/1-51.gif" width="100%">
+							</a>
+						</div>
+						<br>
+						<div id="L2" class="YBBN PIN">
+							<a target="_blank" href="https://bit.ly/2SME-B0-30062017" style="display: block;">
+								<img src="https://yboxvietnam.files.wordpress.com/2017/06/1-3.jpg" width="100%">
+							</a>
+						</div>
+						<div id="L3" class="YBBN PIN" style="margin-top: 10px">
+							<a target="_blank" href="https://bit.ly/Yeskids-L3-2017" style="display: block;"><img src="https://yboxvietnam.files.wordpress.com/2017/06/1-6.gif" width="100%">
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="col-md-8 col-sm-12">
-				<div class="list-article row">
-					<!-- Chỗ này viết 3 nút bản desktop -->
-					<!-- Phần của Tùng -->
-				</div>
-				<div class="list-article row">
-					<!-- Chỗ này viết 3 nút bản mobile -->
-					<!-- Phần của Tùng -->
-
-				</div>
-				<div class="tab-content">
-					<!-- Chỗ này viết nội dung chính  -->
-					<!-- Chưa dùng đến -->
-
-				</div>
+		</div>
+		<div class="row col-md-8 col-sm-12">
+			<!-- <div class="list-article-mobile"> 
+				<ul>
+					<li class="col-md-4">
+						<a href="#" type="button" class="btn btn-default" data-toggle="tab">
+							<i class="fa fa-rocket"></i>
+							Chọn Lọc
+						</a>
+					</li>
+					<li class="col-md-4">
+						<a href="#" type="button" class="btn btn-default" data-toggle="tab">
+							<i class="fa fa-clock-o"></i>
+							Mới Nhất
+						</a>
+					</li>
+					<li class="col-md-4">
+						<a href="#" type="button" class="btn btn-default" data-toggle="tab">
+							<i class="fa fa-trophy" aria-hidden="true"></i>
+							Top Vote
+						</a>
+					</li>
+				</ul>
+			</div> -->
+			<div class="row list-article-desktop">
+				<ul class="btn-group nav nav-pills">
+					<li class="btn-group">
+						<a href="#" data-toggle="tab" >
+							<i class="fa fa-rocket em15"></i>
+                            <span class="category-header">Chọn Lọc</span>
+						</a>
+					</li>
+					<li class="btn-group">
+						<a href="#" data-toggle="tab">
+							<i class="fa fa-clock-o em15"></i>
+                            <span class="category-header">Mới Nhất</span>
+						</a>
+					</li>
+					<li class="btn-group">
+						<a href="#" data-toggle="tab">
+							<i class="fa fa-trophy em15"></i>
+                            <span class="category-header ">Top Vote</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="tab-content">
+				<!-- Chỗ này viết nội dung chính  -->
+				<!-- Chưa dùng đến -->
 			</div>
 		</div>
 	</div>
 
-	<div class="col-md-3 col-sm-3 care-able">
-		<!-- Phần body phải -->
-		<!-- Phần của Trang  -->
+	<div class="col-md-3 col-sm-3 care-able" id="body-right">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3>Có Thể Bạn Quan Tâm</h3>
+			</div>
+			<div class="panel-body">
+				<ul class="body-right">
+					<li>
+						<span class="time">
+							1/2/2017
+						</span>
+						<a href="#"><img src="img/yoona1.jpg"></a>
+						<div class="title-article">
+							<a href="#">Im Yoona (sinh ngày 30 tháng 5 năm 1990), thường được biết đến với nghệ danh Yoona, là một nữ ca sĩ và diễn viên người Hàn Quốc, thành viên nhóm nhạc nữ Girls' Generation. </a>
+						</div>
+						<hr>
+					</li>
+					<li>
+						<span class="time">
+							1/2/2017
+						</span>
+						<a href="#"><img src="img/yoona2.jpg"></a>
+						<div class="title-article">
+							<a href="#">Yoona được sinh ra vào ngày 30 tháng 5 tại Seoul, Hàn Quốc.[2] Gia đình cô gồm bố và một chị gái hơn cô 5 tuổi.[3] Khi còn nhỏ, nhóm nhạc nữ S.E.S.</a>
+						</div>
+						<hr>
+					</li>
+					<li>
+						<span class="time">
+							1/2/2017
+						</span>
+						<a href="#"><img src="img/yoona3.jpg"></a>
+						<div class="title-article">
+							<a href="#">Yoona chính thức ra mắt công chúng với tư cách là thành viên nhóm nhạc nữ Girls' Generation vào tháng 8 năm 2007.</a>
+						</div>
+						<hr>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</div>
 </body>
 
