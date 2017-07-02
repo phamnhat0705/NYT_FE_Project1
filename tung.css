@@ -1,0 +1,145 @@
+@charset "UTF-8";
+@media (min-width: 992px)
+{.col-md-4
+{
+       width: 33.33333%;     
+       float: left;
+       position: relative;
+       min-height: 1px;
+       padding-right: 15px;
+       padding-left: 15px;  
+}
+}
+div{
+    display: block;
+}
+@media (min-width: 992px)
+{.col-md-9 {
+       width: 75%;
+       float: left;
+}
+ .col-md-3{
+       width: 25%;
+       float: left;
+ }
+}
+@media (min-width: 992px)
+{.col-md-8
+{
+           width: 66.6666667%;
+           float: left;
+}
+}
+.center {
+       text-align: center;
+}
+.col-sm-12{
+       position: relative;
+       min-height: 1px;
+       padding-right: 15px;
+       padding-left: 15px;
+}
+@media (min-width: 768px){
+       .col-sm-12{
+           width: 100%;
+       }
+}
+
+.div-shadow {
+       padding-bottom: 15px;
+}
+
+.panel-default{
+       border-color: #ddd;
+}
+
+.panel{
+       margin-bottom: 20px;
+       background-color: #fff;
+       border: 1px solid transparent;
+       border-radius: 4px;
+       box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+}
+
+.ybox16{
+       font-size: 16px;
+}
+
+.list-article{
+       border-top-left-radius: 5px;
+       border-top-right-radius: 5px;
+       background-color: #f5f5f5 !important;
+       box-shadow: 0 -1px 8px 0 rgba(0,0,0,0.1),
+       0 0 2px 0 rgba(0,0,0,0.19);
+}
+
+.row{
+      margin-right: -15px;
+      margin-left: -15px;
+}
+
+.menu-list-article {
+      margin-top: 10px;
+      border-top-left-radius: 5px !important;
+      border-top-right-radius: 5px !important;
+      height: 36px;
+      background-color: #f5f5f5;
+}
+
+.nav{
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;   
+}
+.btn-group{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav>li{
+    position: relative;
+    display: block;
+}
+
+.nav-pills>li>a{
+    border-radius: 4px;
+}
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+.bg-F5{
+    background-color: #f5f5f5 !important;
+}
+
+.em15{
+    font-size: 1.5em !important;
+}
+
+.btn-group > .btn-group{
+    float: left;
+}
+
+.desktop>ul>li>a {
+    padding-top: 0;
+}
+
+.visible-sm, .visible-xs {
+    display: none!important;
+}
+
+.w33{
+    width: 32%;
+    text-align: center;
+}
+
+.nav-pills>li+li{
+    margin-left: 2px;
+}
+.nav-pills>li{
+    float: left;
+}
