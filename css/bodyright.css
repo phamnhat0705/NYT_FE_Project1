@@ -21,10 +21,13 @@ li{
 	list-style-type: none;
 }
 
+.body-right li {
+    position: relative;
+}
 .time{
-	position: relative;
+	position: absolute;
 	background: #ee4343;
-    left: 200px;
+    right: 0px;
     text-align: right;
     top: 50px;
     font-size: inherit;

@@ -13,7 +13,12 @@ li{
 
 .list-vote{
 	padding: 15px;
+	background: white;
+	float: left;
 }
+/*.select-time{
+	float: left;
+}*/
 
 .vote-content img{
 	width: 121.13px;
@@ -21,4 +26,9 @@ li{
 	margin-bottom: 10px;
 	margin-top: 5px;
 	background: white;
+}
+
+.top-vote a img{
+	width: 100%;
+	margin-top: 10px;
 }

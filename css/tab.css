@@ -8,12 +8,25 @@
 	margin: 15px;
 }
 .list-article-desktop{
-	margin-top: 10px;
     border-top-left-radius: 5px !important;
     border-top-right-radius: 5px !important;
-    height: 36px;
+    height: auto;
     background-color: #F5F5F5;
     text-align: center;
-    padding-left: 50px;
-	margin: 10px;
+}
+
+.list-article-desktop ul{
+	width: auto;
+	margin: auto;
+	text-align: center;
+}
+.list-article-desktop ul li a{
+	background-color: #F5F5F5 !important; 
+}
+
+.tab-content{
+	display: none;
+}
+.tab-content.current{
+	display: inherit;
 }
