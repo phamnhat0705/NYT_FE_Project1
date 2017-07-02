@@ -39,12 +39,12 @@ div{
        padding-right: 15px;
        padding-left: 15px;
 }
-@media (min-width: 768px){
+/*@media (min-width: 768px){
        .col-sm-12{
            width: 100%;
        }
 }
-
+*/
 .div-shadow {
        padding-bottom: 15px;
 }
