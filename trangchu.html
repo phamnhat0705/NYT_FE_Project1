@@ -12,10 +12,11 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/sphinx-jquery-view-slider.css">
-	<link rel="stylesheet" href="css/tung.css">
+	<!-- <link rel="stylesheet" href="css/tung.css"> -->
 	<link rel="stylesheet" href="css/bodyright.css">
 	<link rel="stylesheet" href="css/topvote.css">
 	<link rel="stylesheet" href="css/tab.css">
+
 </head>
 
 <body>
@@ -27,8 +28,9 @@
 		<div class="col-sm-4 logo">
 			<a href="http://ybox.vn">
 				<img src="img/logo.png">
-				<p> Kênh thông tin chất lượng cao của sinh viên & giới trẻ Việt Nam</p>
 			</a>
+				<p> Kênh thông tin chất lượng cao của sinh viên & giới trẻ Việt Nam</p>
+			
 		</div>
 		<div class="col-sm-8" style="overflow:hidden;">
 				<div id="H1" class="YBBN" style="float:right" width ="100%">
@@ -55,7 +57,7 @@
 						</li>
 						<li class="text-muted">|</li>
 						<li>
-							<a href="https://www.fb.co/ybox.vn" target="_blank" class="show">
+							<a href="https://www.facebook.com/ybox.vn" target="_blank" class="show">
 								<i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i>
 								&nbsp;Theo Dõi
 							</a>
@@ -148,7 +150,7 @@
 								<li style="text-algin:center">
 									<button class="btn btn-default bold">
 										<i class="btn-fb fa fa-facebook-square" aria-hidden="true">&nbsp;</i>
-										<a href="https://www.fb.co/ybox.vn/">YBOX Fanpage</a>
+										<a href="https://www.facebook.com/ybox.vn/">YBOX Fanpage</a>
 									</button>
 								</li>
 							</ul>
@@ -359,6 +361,206 @@
 			</div>
 		</div>
 	</div>
+
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/sidebarLeftCategory.js"></script>
+	<script src="js/serializeJson.js"></script>
+	<!-- Đoạn dưới này tạo ra sticky header khi scroll  -->
+	<script src="js/stickyheader.js"></script>
+
+
+<!--	<script src="js/upload-avatar.js"></script>
+	<script src="js/login-validation.js"></script>
+	<script src="js/jquery.form.js"></script>
+	<script src="js/tinymce.min.js"></script>
+	
+	<script src="js/underscore-min.js"></script>
+	<script src="js/moment.min.js"></script>
+	<script src="js/bootstrap-datetimepicker.min.js"></script>
+	<script src="js/create-article.js"></script>
+	<script src="js/sphinx-jquery-view-slider.js"></script>
+	<script src="js/serializeJson.js"></script>
+	<script src="js/validator.min.js"></script> -->
+
+	<!-- Đoạn dưới này để tạo modal là box hiện ra khi click login  -->
+	<div data-feature="article-create" class="article-create-modal">
+			<!--Login-->
+			<div id="loginYbox" class="modal fade" tabindex="-1" role="dialog">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content" id="login-info">
+						<div class="modal-header border-0 pdb-0">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+							</button>
+							<h4 class="text-center text-title">Đăng nhập để trải nhiệm các Tiện ích Nâng Cao cùng Ybox.vn</h4>
+							<p class="text-center">(Đăng bài, Lưu bài yêu thích....)</p>
+						</div>
+						<div class="modal-body modal-body-article">
+							<div class="col-md-8 col-md-offset-2"> <a href="http://ybox.vn/redirect" class="btn btn-primary btn-block bold"><i class="fa fa-facebook-official" aria-hidden="true" style="font-size: 1.5em;"></i>&nbsp;Facebook</a>
+							</div>
+							<div class="col-md-4"></div>
+							<div class="clearfix"></div>
+							<div class="text-center"> <span>------------------------------------</span>Hoặc<span>------------------------------------</span>
+								<br>
+								<p>Tạo tài khoản của bạn</p>
+							</div>
+							<div class="clearfix"></div>
+							<div class="col-md-8 col-md-offset-2">
+								<form class="form-horizontal" method="post" action="http://ybox.vn/login" id="login">
+									<div class="form-group">
+										<div class="cols-sm-10">
+											<div class="input-group"> <span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+												<input type="email" class="form-control" name="username" id="username" placeholder="Enter your Email" />
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="cols-sm-10">
+											<div class="input-group"> <span class="input-group-addon"><i class="fa fa-key" aria-hidden="true"></i></span>
+												<input type="password" class="form-control" name="password" id="password" placeholder="Enter your Password" />
+											</div>
+										</div>
+									</div>
+									<div class="form-group"> <span id="login-error" class="text-danger"></span>
+										<a id="forgot-password" href="#" class="pull-right">Quên mật khẩu?</a>
+									</div>
+									<button type="submit" class="btn btn-warning btn-block next-modal"> <i class="fa fa-spinner fa-spin" style="display:none"></i> &nbsp;Đăng nhập</button>
+								</form>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div id="forgot" class="modal-content" style="display:none">
+						<div class="modal-header border-0 pdb-0">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+							</button>
+							<h4 class="text-center text-title">Nhập email bạn đã dùng để đăng nhập</h4>
+						</div>
+						<div class="modal-body modal-body-article">
+							<div class="col-md-8 col-md-offset-2">
+								<form class="form-horizontal" method="post" action="http://ybox.vn/forgot-password" id="forgot-password-from">
+									<div class="form-group">
+										<div class="cols-sm-10">
+											<div class="input-group"> <span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+												<input type="email" class="form-control" name="email" id="username" placeholder="Enter your Email" />
+											</div>
+										</div>
+									</div>
+									<div class="form-group"> <span id="email-error" class="text-danger"></span>
+										<a id="return-login" href="#" class="pull-right">Quay lại trang đăng nhập</a>
+									</div>
+									<div class="col-md-offset-3 col-md-6 row">
+										<button type="submit" class="btn btn-warning btn-block next-modal"> <i class="fa fa-spinner fa-spin" style="display:none"></i> &nbsp; Gửi</button>
+									</div>
+								</form>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			
+			<!-- Đoạn dưới này điều khiển sự kiện khi click vào phần notification -->
+			<script>
+		$(document).ready(function ()
+		    {
+		        $('.bell-notification').on('click', function () {
+		
+		            if ( ! $('[data-login]').data('login'))
+		            {
+		                var options = {
+		                    content: `<div class="text-center">
+		                                        <p>Đăng nhập để sử dụng mọi tiện ích của YBOX miễn phí vĩnh viễn</p>
+		                                        <button class="btn btn-primary loginform-btn">Đăng nhập</button>
+		                                        </div>`,
+		                    html: true,
+		                    trigger : 'manual',
+		                    placement : 'bottom'
+		                };
+		                $('.bell-notification').popover(options);
+		                $('.bell-notification').popover('show');
+		                setTimeout(function(){
+		                    $('.bell-notification').popover('hide');
+		                },3000);
+		                $('.loginform-btn').on('click', function(){
+		                    $('.bell-notification').popover('hide');
+		                    $('#login-btn').trigger('click');
+		                });
+		                $('span').remove('.badge');
+		            }
+		            // Đoạn này không cần 
+		            // var getNotification = $.get('/notification');
+		            // getNotification.then(function (listNotification) {
+		                $('span').remove('.badge');
+		
+		            // });
+		        });
+		    });
+	</script>
+			<!-- Đoạn dưới này là phần js để điều khiển box login -->
+	<script>
+		(function ($) {
+		        $(function () {
+		            var sideBarCategory = new SideBarCategory($("[data-type=category]"));
+		            sideBarCategory.sidebar();
+		            var loginForm = $('#login'), loginModal = $('#loginYbox'),
+		                    linkToForgotPassword = $('#forgot-password'),
+		                    linkToLogin = $('#return-login'),
+		                    loginContent = $('#login-info'),
+		                    forgotPasswordContent = $('#forgot'),
+		                    forgotPasswordFrom = $('#forgot-password-from');
+		            loginForm.on('submit', function(event){
+		                event.preventDefault();
+		                $('.fa-spin').show();
+		                var loginInfo = loginForm.serializeJson();
+		                var $login = $.post(loginForm.attr('action'),loginInfo);
+		                $login.then(function(response){
+		                    if(response.status == 'wait'){
+		                        alert ('Kiểm tra email để kích hoạt tài khoản');
+		                        loginModal.modal('hide');
+		                    }else if ( response['redirect-link']){
+		                        window.location.href = response["redirect-link"];
+		                    }
+		                    $('.fa-spin').hide();
+		                },function(){
+		                    $('.fa-spin').hide();
+		                    $('#login-error').text('(*) Mật khẩu không đúng')
+		                });
+		            });
+		            loginModal.on('hidden.bs.modal', function(){
+		                loginForm.trigger('reset');
+		                forgotPasswordFrom.trigger('reset');
+		                loginContent.show();
+		                forgotPasswordContent.hide();
+		            });
+		            linkToForgotPassword.on('click', function(){
+		                loginContent.hide();
+		                forgotPasswordContent.show();
+		            });
+		            linkToLogin.on('click', function(){
+		                loginContent.show();
+		                forgotPasswordContent.hide();
+		            });
+		            forgotPasswordFrom.on('submit', function(event){
+		                event.preventDefault();
+		                $('.fa-spin').show();
+		                var self = $(this);
+		                var email = forgotPasswordFrom.serializeJson();
+		                var $forgotPass = $.post(forgotPasswordFrom.attr('action'),email);
+		                $forgotPass.then(function(){
+		                    $('.fa-spin').hide();
+		                    alert ('Bạn vui lòng check email để nhận lại mật khẩu');
+		                    location.reload();
+		                },function(){
+		                    $('.fa-spin').hide();
+		                    $('#email-error').text('Email bạn đã nhập không tồn tại trong hệ thống');
+		                });
+		            });
+		
+		        })
+		    })(window.jQuery)
+	</script>
 </body>
 
 </html>
